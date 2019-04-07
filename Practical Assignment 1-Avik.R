@@ -161,7 +161,7 @@ rcor <- cor(x)[lower.tri(diag(dim), diag = FALSE)]
 return(rcor)}
 rcor <- rollapply(PriceCoinsRet, width = 250, rollc, align = "right", by.column = FALSE)
 colnames(rcor) <- c("BTC & LTC", "LTC & ETH", "ETH & BTC")
-plot(rcor, main = "", xlab = "")
+plot(rcor, main = "", xlab = "") 
 
 # Part III
 # 28) Export all graphs to a word document and briefly analyze 
