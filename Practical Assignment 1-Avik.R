@@ -130,7 +130,7 @@ head(PriceCoins)
 #22) by using the package zoo create an element of class "zoo" 
 # labled PriceCoinsZoo, and includes Prices of all three Coints: 
 # BTCPrice", "LTCPrice", and "ETHPrice"
-PriceCoinsZoo <- as.zoo(PriceCoins)
+PriceCoinsZoo <- as.zoo(PriceCoins) 
 
 #23) Plot a time series graph of prices of all three coins
 plot(PriceCoinsZoo, xlab = "", main = "")
